@@ -39,7 +39,7 @@ function init() {
       );
       console.log(
         `      ${chalk.cyan(
-          'https://github.com/evershop/create-evershop-app/issues/new'
+          'https://github.com/ajaysriramm90-droid/my-shop/issues/new'
         )}`
       );
       console.log();

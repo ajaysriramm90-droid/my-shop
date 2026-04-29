@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { camelCase } from '../../../../../lib/util/camelCase.js';
 import { CollectionCollection } from '../../../../../modules/catalog/services/CollectionCollection.js';
 import { getCollectionsBaseQuery } from '../../../../../modules/catalog/services/getCollectionsBaseQuery.js';
+import { getProductsBaseQuery } from '../../../../../modules/catalog/services/getProductsBaseQuery.js';
 import { getProductsByCollectionBaseQuery } from '../../../../../modules/catalog/services/getProductsByCollectionBaseQuery.js';
 import { ProductCollection } from '../../../../../modules/catalog/services/ProductCollection.js';
 
@@ -22,8 +23,20 @@ export default {
     }
   },
   Collection: {
-    products: async (collection, { filters = [] }, { user }) => {
-      const query = getProductsByCollectionBaseQuery(collection.collectionId);
+    products: async (collection, { filters = [] }, { user, pool }) => {
+      let query = getProductsByCollectionBaseQuery(collection.collectionId);
+
+      // Fallback for homepage: show latest catalog products if collection mapping is empty.
+      // This helps when older products were created before homepage auto-assignment existed.
+      if (!user && collection.code === 'homepage') {
+        const linkedProduct = await select('product_id')
+          .from('product_collection')
+          .where('collection_id', '=', collection.collectionId)
+          .load(pool);
+        if (!linkedProduct) {
+          query = getProductsBaseQuery();
+        }
+      }
       const root = new ProductCollection(query);
       await root.init(filters, !!user);
       return root;

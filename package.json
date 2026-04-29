@@ -24,8 +24,12 @@
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx ./packages",
     "prepare": "husky install"
   },
-  "author": "Ajay, Chennai India",
+  "author": "AJAY SRIRAMM <ajaysriramm90@gmail.com>",
   "license": "GNU GENERAL PUBLIC LICENSE 3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaysriramm90-droid/my-shop.git"
+  },
   "devDependencies": {
     "@parcel/watcher": "^2.5.1",
     "@swc/cli": "^0.7.7",

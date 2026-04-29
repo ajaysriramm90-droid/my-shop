@@ -147,7 +147,7 @@ export default () => {
       scripts: [],
       bases: []
     },
-    copyRight: `© 2022 Evershop. All Rights Reserved.`
+    copyRight: `© 2026 AJAY SRIRAMM. All Rights Reserved.`
   };
   config.util.setModuleDefaults('themeConfig', defaultThemeConfig);
 

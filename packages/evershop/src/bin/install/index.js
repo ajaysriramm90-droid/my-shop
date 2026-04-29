@@ -249,7 +249,7 @@ DB_SSLMODE="${sslMode}"
     await insertOnUpdate('admin_user', ['email'])
       .given({
         status: 1,
-        email: adminUser?.email || 'admin@evershop.io',
+        email: adminUser?.email || 'admin@ajaysriramm.com',
         password: passwordHash,
         full_name: adminUser?.fullName || 'Admin'
       })

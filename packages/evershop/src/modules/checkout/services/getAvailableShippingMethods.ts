@@ -55,7 +55,10 @@ export const getAvailableShippingMethods = async (
     country || shippingAddress?.country
   );
 
-  const zone = await zoneQuery.load(pool);
+  const shippingZoneProvinces = await zoneQuery.execute(pool);
+  const zone = shippingZoneProvinces.find(
+    (item) => item.province === (province || shippingAddress?.province)
+  ) || shippingZoneProvinces.find((item) => item.province === null);
   if (!zone) {
     return [];
   }

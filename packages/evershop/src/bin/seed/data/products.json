@@ -52,7 +52,7 @@
     "variant_group": "ceramic-coffee-cup",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/cup-white.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/cup-white.jpg",
         "isMain": true
       }
     ],
@@ -109,7 +109,7 @@
     "variant_group": "ceramic-coffee-cup",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/cup-black.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/cup-black.jpg",
         "isMain": true
       }
     ],
@@ -166,7 +166,7 @@
     "variant_group": "ceramic-coffee-cup",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/cup-yellow.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/cup-yellow.jpg",
         "isMain": true
       }
     ],
@@ -230,7 +230,7 @@
     "variant_group": "desk-pen-holder",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/pen-holder-white.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/pen-holder-white.jpg",
         "isMain": true
       }
     ],
@@ -287,7 +287,7 @@
     "variant_group": "desk-pen-holder",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/pen-holder-black.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/pen-holder-black.jpg",
         "isMain": true
       }
     ],
@@ -344,7 +344,7 @@
     "variant_group": "desk-pen-holder",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/pen-holder-yellow.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/pen-holder-yellow.jpg",
         "isMain": true
       }
     ],
@@ -408,7 +408,7 @@
     "variant_group": "ceramic-candy-bowl",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/bowl-white.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/bowl-white.jpg",
         "isMain": true
       }
     ],
@@ -465,7 +465,7 @@
     "variant_group": "ceramic-candy-bowl",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/bowl-black.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/bowl-black.jpg",
         "isMain": true
       }
     ],
@@ -522,7 +522,7 @@
     "variant_group": "ceramic-candy-bowl",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/bowl-yellow.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/bowl-yellow.jpg",
         "isMain": true
       }
     ],
@@ -586,7 +586,7 @@
     "variant_group": "modern-ceramic-vase",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/vase-white.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/vase-white.jpg",
         "isMain": true
       }
     ],
@@ -643,7 +643,7 @@
     "variant_group": "modern-ceramic-vase",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/vase-black.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/vase-black.jpg",
         "isMain": true
       }
     ],
@@ -700,7 +700,7 @@
     "variant_group": "modern-ceramic-vase",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/vase-green.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/vase-green.jpg",
         "isMain": true
       }
     ],
@@ -764,7 +764,7 @@
     "variant_group": "stainless-steel-thermos",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/thermos-white.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/thermos-white.jpg",
         "isMain": true
       }
     ],
@@ -821,7 +821,7 @@
     "variant_group": "stainless-steel-thermos",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/thermos-black.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/thermos-black.jpg",
         "isMain": true
       }
     ],
@@ -878,7 +878,7 @@
     "variant_group": "stainless-steel-thermos",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/thermos-yellow.jpg",
+        "url": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/thermos-yellow.jpg",
         "isMain": true
       }
     ],

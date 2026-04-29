@@ -69,6 +69,16 @@ async function createCustomerAddress(
       throw new Error('Invalid customer');
     }
     customerAddressData.customer_id = customer.customer_id;
+    // If this is the first address, mark it as default automatically.
+    // This keeps checkout prefill working even when the user does not
+    // explicitly check "set as default".
+    const existingAddress = await select()
+      .from('customer_address')
+      .where('customer_id', '=', customer.customer_id)
+      .load(connection);
+    if (!existingAddress) {
+      customerAddressData.is_default = true;
+    }
     // Insert customer address data
     const customerAddress = await hookable(insertCustomerAddressData, {
       ...context,

@@ -207,6 +207,65 @@ async function insertProductImages(images: string[], productId: number, connecti
   );
 }
 
+async function assignProductToHomepageCollection(
+  productId: number,
+  connection: PoolClient
+): Promise<void> {
+  let homepageCollection = await select('collection_id')
+    .from('collection')
+    .where('code', '=', 'homepage')
+    .load(connection);
+
+  if (!homepageCollection) {
+    const createdCollection = await insert('collection')
+      .given({
+        name: 'Featured Products',
+        code: 'homepage',
+        description: JSON.stringify([])
+      })
+      .execute(connection);
+
+    homepageCollection = { collection_id: createdCollection.insertId };
+  }
+
+  await insertOnUpdate('product_collection', ['collection_id', 'product_id'])
+    .given({
+      collection_id: homepageCollection.collection_id,
+      product_id: productId
+    })
+    .execute(connection);
+}
+
+async function ensureHomepageCollectionProductsWidget(
+  connection: PoolClient
+): Promise<void> {
+  const homepageWidget = await select('widget_id')
+    .from('widget')
+    .where('name', '=', 'Featured Products')
+    .and('type', '=', 'collection_products')
+    .load(connection);
+
+  if (homepageWidget) {
+    return;
+  }
+
+  await insert('widget')
+    .given({
+      name: 'Featured Products',
+      type: 'collection_products',
+      route: JSON.stringify(['homepage']),
+      area: JSON.stringify(['content']),
+      sort_order: 20,
+      settings: JSON.stringify({
+        count: 4,
+        collection: 'homepage',
+        countPerRow: 4
+      }),
+      status: true
+    })
+    .execute(connection);
+}
+
 
 async function insertProductData(data: ProductData, connection: PoolClient): Promise<ProductRow & ProductDescriptionRow & { insertId: number }> {
   // If no_shipping_required is true, set weight to 0
@@ -266,6 +325,8 @@ async function createProduct(data: ProductData, context: Record<string, any>): P
       product.insertId,
       connection
     );
+    await assignProductToHomepageCollection(product.insertId, connection);
+    await ensureHomepageCollectionProductsWidget(connection);
 
     await commit(connection);
     return product;

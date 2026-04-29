@@ -23,6 +23,7 @@ export default async (request, response, next) => {
       .load(connection);
 
     if (method) {
+      await rollback(connection);
       response.status(INVALID_PAYLOAD);
       response.json({
         error: {
@@ -33,11 +34,15 @@ export default async (request, response, next) => {
       return;
     }
 
-    const newMethod = await insert('shipping_method')
+    const newMethodResult = await insert('shipping_method')
       .given({
         name
       })
       .execute(connection);
+    const newMethod = await select()
+      .from('shipping_method')
+      .where('shipping_method_id', '=', newMethodResult.insertId)
+      .load(connection);
     await commit(connection);
     response.status(OK);
     response.json({

@@ -60,6 +60,12 @@ export default {
           .and('is_default', '=', true)
           .load(pool);
         if (address) return camelCase(address);
+        // Fallback: use any address when no default is configured.
+        const fallbackAddress = await select()
+          .from('customer_address')
+          .where('customer_id', '=', customerId)
+          .load(pool);
+        if (fallbackAddress) return camelCase(fallbackAddress);
       }
       return null;
     },
@@ -78,6 +84,12 @@ export default {
           .and('is_default', '=', true)
           .load(pool);
         if (address) return camelCase(address);
+        // Fallback: use any address when no default is configured.
+        const fallbackAddress = await select()
+          .from('customer_address')
+          .where('customer_id', '=', customerId)
+          .load(pool);
+        if (fallbackAddress) return camelCase(fallbackAddress);
       }
       return null;
     },

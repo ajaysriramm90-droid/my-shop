@@ -22,13 +22,16 @@ A modern full-stack eCommerce platform built with TypeScript, React, GraphQL and
 
 Step 1 - Clone the project:
 ```
-git clone https://github.com/YOUR_USERNAME/ajay-shop.git
+git clone https://github.com/ajaysriramm90-droid/my-shop.git
 ```
 
 Step 2 - Install dependencies:
 ```
 npm install
 ```
+createdb -U postgres evershop
+
+
 
 Step 3 - Setup the database:
 ```
@@ -52,7 +55,8 @@ http://localhost:3000
 - seed/ - Sample product images and data
 
 ## 👨‍💻 Author
-Ajay - Chennai, India
+AJAY SRIRAMM
+Email: ajaysriramm90@gmail.com
 
 ## 📄 License
 GPL-3.0

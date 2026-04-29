@@ -49,7 +49,7 @@
       "slides": [
         {
           "id": "slide-1",
-          "image": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/banner-one.jpg",
+          "image": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/banner-one.jpg",
           "width": 2400,
           "height": 1200,
           "subText": "Discover our exquisite collection of ceramic and stainless steel products",
@@ -60,7 +60,7 @@
         },
         {
           "id": "slide-2",
-          "image": "https://raw.githubusercontent.com/evershopcommerce/evershop/refs/heads/dev/seed/images/banner-two.jpg",
+          "image": "https://raw.githubusercontent.com/ajaysriramm90-droid/my-shop/refs/heads/dev/seed/images/banner-two.jpg",
           "width": 2400,
           "height": 1200,
           "subText": "Elegant designs that enhance your daily life, from morning coffee to home organization",

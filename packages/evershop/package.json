@@ -123,11 +123,11 @@
     "user:changePassword": "evershop user:changePassword",
     "test": "jest"
   },
-  "author": "The Nguyen (https://evershop.io)",
+  "author": "AJAY SRIRAMM <ajaysriramm90@gmail.com>",
   "license": "GNU GENERAL PUBLIC LICENSE 3.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evershopcommerce/evershop.git"
+    "url": "git+https://github.com/ajaysriramm90-droid/my-shop.git"
   },
   "keywords": [
     "ecommerce",
@@ -135,9 +135,9 @@
     "cart"
   ],
   "bugs": {
-    "url": "https://github.com/evershopcommerce/evershop/issues"
+    "url": "https://github.com/ajaysriramm90-droid/my-shop/issues"
   },
-  "homepage": "http://evershop.io/",
+  "homepage": "https://github.com/ajaysriramm90-droid/my-shop",
   "dependencies": {
     "@base-ui/react": "^1.1.0",
     "@ckeditor/ckeditor5-build-classic": "^36.0.1",

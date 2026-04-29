@@ -17,7 +17,7 @@ export default function CopyRight({
 
 CopyRight.defaultProps = {
   themeConfig: {
-    copyRight: '© 2026 E-Commerce store. All Rights Reserved.'
+    copyRight: '© 2026 AJAY SRIRAMM. All Rights Reserved.'
   }
 };
 
